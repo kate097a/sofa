@@ -1,0 +1,519 @@
+.shopText {
+    animation: runText 3s linear infinite;
+}
+
+@keyframes runText {
+    from {
+      transform: translateX(0%);
+    }
+    to {
+      transform: translateX(-31.55%);
+    }
+}
+
+.shopText:hover {
+    animation-play-state: paused;
+}
+  
+.shema {
+    animation: shemaMove 2.5s infinite ease-out;
+}
+
+@keyframes shemaMove {
+    0% {transform: translateX(-9vw); background-image: url("/image/shema.svg");}
+    50% {transform: translateX(25vw); background-image: url("/image/shema2.svg")}
+    100% {transform: translateX(-9vw);}
+}
+
+.lineImg {
+    animation: linesMove 2.5s infinite ease-out;
+}
+
+
+#second {
+    animation: linesMove 2.5s infinite ease-out;
+}
+
+@keyframes linesMove {
+    0% {margin-right: 2.8vw;}
+    50% {margin-right: 0.8vw;}
+    100% {margin-right: 2.8vw;}
+}
+
+.chain {
+    animation: firstLineMove 1s infinite linear;
+}
+
+@keyframes firstLineMove{
+    from {
+      transform: translatey(1vw);
+    }
+    to {
+      transform: translatey(-12.7vw);
+    }
+}
+
+.microLines{
+    animation: microLinesMove 1s infinite linear;
+}
+
+@keyframes microLinesMove{
+    from {
+      transform: translatey(-9.4vw);
+    }
+    to {
+      transform: translatey(3vw);
+    }
+}
+
+.miniCircle{
+    animation: miniCirclesMove 1s infinite linear;
+}
+
+@keyframes miniCirclesMove{
+    from {
+      transform: translatey(1vw);
+    }
+    to {
+      transform: translatey(-9vw);
+    }
+}
+
+.miniLines {
+    animation: miniLinesMove 1s infinite linear;
+}
+
+@keyframes miniLinesMove{
+    from {
+      transform: translatey(-7vw);
+    }
+    to {
+      transform: translatey(0vw);
+    }
+}
+
+.line1:hover .chain{
+    animation-play-state: paused;
+}
+
+.line2:hover .microLines{
+    animation-play-state: paused;
+}
+
+.line3:hover .miniCircle{
+    animation-play-state: paused;
+}
+
+.line4:hover .miniLines{
+    animation-play-state: paused;
+}
+
+.up {
+    animation: patternMoveUp 2s cubic-bezier(0.86, 0, 0.07, 1) infinite;
+}
+
+@keyframes patternMoveUp {
+    0% {transform: rotate(180deg);}
+    25% {transform: rotate(90deg);}
+    50% {transform: rotate(0deg);}
+    75% {transform: rotate(-90deg);}
+    100% {transform: rotate(-180deg);}
+}
+
+.down {
+    animation: patternMoveDown 2s cubic-bezier(0.86, 0, 0.07, 1) infinite;
+}
+
+@keyframes patternMoveDown {
+    0% {transform: rotate(-180deg);}
+    25% {transform: rotate(-90deg);}
+    50% {transform: rotate(0deg);}
+    75% {transform: rotate(90deg);}
+    100% {transform: rotate(180deg);}
+}
+
+.pattern:hover {
+    animation-play-state: paused;
+}
+
+.line6Text {
+    animation: runTextLittle 3s linear infinite;
+}
+
+@keyframes runTextLittle {
+    from {
+      transform: translateX(-18%);
+    }
+    to {
+      transform: translateX(15.7%);
+    }
+}
+
+#rec1 {
+    animation: recMove1 2s infinite ease;
+}
+
+#rec3 {
+    animation: recMove1 2s infinite ease;
+}
+
+#rec5 {
+    animation: recMove1 2s infinite ease;
+}
+
+
+@keyframes recMove1 {
+    0% {transform: translatex(0vw);}
+    50% {transform: translatex(15vw);}
+    100% {transform: translatex(0vw);}
+
+}
+
+#rec2 {
+    animation: recMove2 2s infinite ease;
+}
+
+#rec4 {
+    animation: recMove2 2s infinite ease;
+}
+
+#rec6 {
+    animation: recMove2 2s infinite ease;
+}
+
+@keyframes recMove2 {
+    0% {transform: translatex(0vw);}
+    50% {transform: translatex(-15vw);}
+    100% {transform: translatex(0vw);}
+}
+
+.bigRectangle {
+    animation: bigRectangleColor 2s infinite ease-in-out;
+}
+
+
+@keyframes bigRectangleColor {
+    0% {background-color: white;}
+    100% {background-color: #FFC164;}
+}
+
+.circleFirst {
+    animation: circleFirstMove 2.3s infinite linear;
+}
+
+.circleFirst:hover{
+    transition: all 2s ease;
+    animation: circleFirstMove2 2.3s infinite linear;
+}
+
+@keyframes circleFirstMove {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}
+
+@keyframes circleFirstMove2 {
+    0% {transform: rotate(360deg);}
+    100% {transform: rotate(0deg);}
+}
+
+.circleSecond {
+    animation: circleFirstMove2 2.3s infinite linear;
+}
+
+.circleSecond:hover{
+    transition: all 2s ease;
+    animation: circleFirstMove 2.3s infinite linear;
+}
+
+
+.secondLine6Text {
+    animation: haha 2.8s linear infinite;
+}
+
+@keyframes haha{
+    from {
+      transform: translateX(9vw);
+    }
+    to {
+      transform: translateX(-22vw);
+    }
+}
+
+.longRecContainer {
+    transition: 0.6s linear;
+    animation: longRecMove1 2s ease infinite;
+}
+
+@keyframes longRecMove1 {
+    0% {height: 35vw;}
+    50% {height: 10vw;}
+    100% {height: 35vw;}
+}
+
+.longRecContainer2 {
+    animation: longRecMove2 1.5s ease infinite;
+}
+
+@keyframes longRecMove2 {
+    0% {height: 20vw;}
+    50% {height: 5vw;}
+    100% {height: 20vw;}
+}
+
+.longRecContainer3 {
+    animation: longRecMove3 1.9s ease infinite;
+}
+
+@keyframes longRecMove3 {
+    0% {height: 25vw;}
+    50% {height: 5vw;}
+    100% {height: 25vw;}
+}
+
+.longRecContainer4 {
+    animation: longRecMove4 1.3s ease infinite;
+}
+
+@keyframes longRecMove4 {
+    0% {height: 20vw;}
+    50% {height: 10vw;}
+    100% {height: 20vw;}
+}
+
+.longRecContainer5 {
+    animation: longRecMove5 1.3s ease infinite;
+}
+
+@keyframes longRecMove5 {
+    0% {height: 30vw;}
+    50% {height: 7vw;}
+    100% {height: 30vw;}
+}
+
+.longRecContainer6 {
+    animation: longRecMove6 1s ease infinite;
+}
+
+@keyframes longRecMove6 {
+    0% {height: 20vw;}
+    50% {height: 7vw;}
+    100% {height: 20vw;}
+}
+
+
+.longRecContainer7{
+    animation: longRecMove7 1.3s ease infinite;
+}
+
+@keyframes longRecMove7 {
+    0% {height: 23vw;}
+    50% {height: 13vw;}
+    100% {height: 23vw;}
+}
+
+.longRecContainer8 {
+    animation: longRecMove8 1.2s ease infinite;
+}
+
+@keyframes longRecMove8 {
+    0% {height: 10vw;}
+    50% {height: 5vw;}
+    100% {height: 10vw;}
+}
+
+.longRecContainer9 {
+    animation: longRecMove9 1.3s ease infinite;
+}
+
+@keyframes longRecMove9 {
+    0% {height: 14vw;}
+    50% {height: 8vw;}
+    100% {height: 14vw;}
+}
+
+.longRecContainer10 {
+    animation: longRecMove10 1.9s ease infinite;
+}
+
+@keyframes longRecMove10 {
+    0% {height: 21vw;}
+    50% {height: 14vw;}
+    100% {height: 21vw;}
+}
+
+.longRecContainer11 {
+    animation: longRecMove11 1.3s ease infinite;
+}
+
+@keyframes longRecMove11 {
+    0% {height: 30vw;}
+    50% {height: 12vw;}
+    100% {height: 30vw;}
+}
+
+.longRecContainer12 {
+    animation: longRecMove12 1.7s ease infinite;
+}
+
+@keyframes longRecMove12 {
+    0% {height: 23vw;}
+    50% {height: 8vw;}
+    100% {height: 23vw;}
+}
+
+.longRecContainer13 {
+    animation: longRecMove13 1.3s ease infinite;
+}
+
+@keyframes longRecMove13 {
+    0% {height: 17vw;}
+    50% {height: 11vw;}
+    100% {height: 17vw;}
+}
+
+@keyframes longRecColor {
+    0% {background-color: #ffffff;}
+    100% {background-color: #FFC164;}
+}
+
+#longRec1:hover {
+    animation: longRecColor 1.3s ease infinite;
+}
+
+#longRec1 {
+    width: 100%;
+    transition: background-color 5s;
+}
+
+#longRec2:hover {
+    animation: longRecColor 1s ease infinite;
+}
+
+#longRec2{
+    width: 100%;
+    transition: background-color 0.6s;
+}
+
+#longRec3:hover {
+    animation: longRecColor 1.3s ease infinite;
+}
+
+#longRec3{
+    width: 100%;
+    transition: background-color 0.6s;
+}
+
+#longRec4:hover {
+    animation: longRecColor 1.3s ease infinite;
+}
+
+#longRec4{
+    width: 100%;
+}
+
+#longRec5:hover {
+    animation: longRecColor 1.3s ease infinite;
+}
+
+#longRec5{
+    width: 100%;
+}
+
+#longRec6:hover {
+    animation: longRecColor 1.3s ease infinite;
+}
+
+#longRec6{
+    width: 100%;
+}
+
+#longRec7:hover {
+    animation: longRecColor 1.3s ease infinite;
+}
+
+#longRec7{
+    width: 100%;
+}
+
+#longRec8:hover {
+    animation: longRecColor 1.3s ease infinite;
+}
+
+#longRec8{
+    width: 100%;
+}
+
+#longRec9:hover {
+    animation: longRecColor 1.3s ease infinite;
+}
+
+#longRec9{
+    width: 100%;
+    transition: background-color 1s ease;
+}
+
+#longRec10:hover {
+    animation: longRecColor 1.3s ease infinite;
+}
+
+#longRec10 {
+    width: 100%;
+}
+
+#longRec11:hover {
+    animation: longRecColor 1.3s ease infinite;
+}
+
+#longRec11 {
+    width: 100%;
+}
+
+#longRec12:hover {
+    animation: longRecColor 1.3s ease infinite;
+}
+
+#longRec12 {
+    width: 100%;
+}
+
+#longRec13:hover {
+    animation: longRecColor 1.3s ease infinite;
+}
+
+#longRec13 {
+    width: 100%;
+}
+
+.footerTextConstructor {
+    animation: footerTextFirstMove 2s linear infinite;
+}
+
+@keyframes footerTextFirstMove {
+    from {
+        transform: translatex(0vw);
+      }
+      to {
+        transform: translatex(-16.4vw);
+      }
+}
+
+.footerContainer:hover  .footerTextConstructor {
+    animation-play-state: paused;
+}
+
+.footerTextAuthor {
+    animation: footerTextSecondMove 3s linear infinite;
+}
+  
+@keyframes footerTextSecondMove {
+    from {
+        transform: translatex(-46vw);
+      }
+      to {
+        transform: translatex(-1.6vw);
+      }
+}
+
+.footerContainerSecond:hover  .footerTextAuthor {
+    animation-play-state: paused;
+}
